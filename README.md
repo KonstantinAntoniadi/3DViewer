@@ -3,7 +3,7 @@
 > School 21 (Kazan)
 
 ## Overview
-![cat](img/cat.png)
+![teapot](img/teapot.png)
 
 ## The program allows you to:
 - Load a wireframe model from a file of the [about] format (support only for a list of vertices and surfaces)
