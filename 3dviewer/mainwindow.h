@@ -6,7 +6,7 @@
 #include <QOpenGLWidget>
 
 extern "C" {
-#include "backend/s21_3d_v.h"
+#include "backend/3d_v.h"
 }
 
 QT_BEGIN_NAMESPACE

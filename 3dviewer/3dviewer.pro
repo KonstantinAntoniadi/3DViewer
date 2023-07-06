@@ -14,13 +14,13 @@ SOURCES += \
     glwidget.cpp \
     main.cpp \
     mainwindow.cpp \
-    backend/s21_3d_v.c \
+    backend/3d_v.c \
     backend/affine_transformations.c
 
 HEADERS += \
     glwidget.h \
     mainwindow.h \
-    backend/s21_3d_v.h \
+    backend/3d_v.h \
     backend/affine_transformations.h
 
 FORMS += \

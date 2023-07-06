@@ -1,5 +1,5 @@
-#ifndef BACKEND_S21_3D_V_H
-#define BACKEND_S21_3D_V_H
+#ifndef BACKEND_3D_V_H
+#define BACKEND_3D_V_H
 
 #include <math.h>
 #include <stdbool.h>
@@ -29,4 +29,4 @@ double findMaxValue(double *vertexes, int count_vertexes, char find);
 double findMaxOfThree(double a, double b, double c);
 void centering(double *vertexes, int count_vertexes);
 
-#endif  // BACKEND_S21_3D_V_H
+#endif  // BACKEND_3D_V_H

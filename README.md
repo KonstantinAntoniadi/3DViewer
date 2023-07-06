@@ -1,6 +1,4 @@
 # 3D Viewer (QT + OpenGL + C)
-> Created by edwinevi  
-> School 21 (Kazan)
 
 ## Overview
 ![teapot](img/teapot.png)

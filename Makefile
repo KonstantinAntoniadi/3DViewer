@@ -1,7 +1,6 @@
 CC=gcc
 CFLAG=-c 
 CFLAGS=-Wall -Werror -Wextra -std=c11
-# SRC_DIR=backend
 PRO=3dviewer.pro
 APP=3dviewer.app
 INSTALL_DIR=~/Desktop
@@ -28,9 +27,6 @@ uninstall:
 open:
 	@open -n $(INSTALL_DIR)/$(APP) --args -AppCommandLineArg
 
-dvi:
-	@open README.pdf
-
 test: clean
 	$(CC) $(CFLAGS) $(TEST) $(BACK_SRC) $(TEST_LIBS) -o unit_test
 	./unit_test
@@ -50,14 +46,10 @@ dist:
 	tar -cvzf Archive_viewer.tar.gz Archive_viewer
 
 format:
-	@cp ../materials/linters/.clang-format ./
-	clang-format -i $(SRC_DIR)/backend/*.c $(SRC_DIR)/backend/*.h 
-	@rm .clang-format
+	clang-format --style=Google -i $(SRC_DIR)/backend/*.c $(SRC_DIR)/backend/*.h 
 
 check: 
-	@cp ../materials/linters/.clang-format ./
-	clang-format -n $(SRC_DIR)/backend/*.c $(SRC_DIR)/backend/*.h 
-	@rm .clang-format
+	clang-format --style=Google -n $(SRC_DIR)/backend/*.c $(SRC_DIR)/backend/*.h 
 
 clean:
 	@rm -rf *.o

@@ -12,7 +12,7 @@
 #include "qgifimage.h"
 
 extern "C" {
-#include "backend/s21_3d_v.h"
+#include "backend/3d_v.h"
 #include "backend/affine_transformations.h"
 }
 

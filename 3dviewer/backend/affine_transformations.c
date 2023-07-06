@@ -1,7 +1,3 @@
-//
-// Created by Halfempty Taisha on 4/2/23.
-//
-
 #include "affine_transformations.h"
 
 void move_object(data_t *A, double mov_x, double mov_y, double mov_z) {
